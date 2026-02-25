@@ -1,15 +1,14 @@
 module adder(
     // Declare your A/B inputs
-    input A,
-    input B,
+    input A, 
+    input B, 
     // Declare Y output
     output Y,
     // Declare carry output
-    output Carry
+     output carry
 );
 
     // Enter logic equation here
     assign Y = A ^ B;
-    assign Carry = A & B;
-
+    assign carry = A & B;
 endmodule

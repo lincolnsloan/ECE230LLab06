@@ -1,14 +1,14 @@
 // Implement module called full_adder
 module full_adder(
-    input A,
-    input B,
-    input Cin,
-    
-    output Y,
-    output Cout
+input A,
+input B, 
+input Cin,
+output Y,
+output Cout
 );
 
-assign Y = (~A & ~B & Cin) | (~A & B & ~Cin) | (A & B & Cin) | (A & ~B & ~Cin);
+assign Y = (~A & ~B & Cin)|(~A & B & ~Cin)|(A & B & Cin)|(A & ~B & ~Cin);
 assign Cout = (A & B) | (A & Cin) | (B & Cin);
+
 
 endmodule
